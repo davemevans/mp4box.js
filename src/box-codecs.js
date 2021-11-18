@@ -238,7 +238,7 @@ BoxParser.vp08SampleEntry.prototype.getCodec =
 BoxParser.vp09SampleEntry.prototype.getCodec = function() {
 	var baseCodec = BoxParser.SampleEntry.prototype.getCodec.call(this);
 	var level = this.vpcC.level;
-	if (level == 0) {
+	if (level === 0) {
 		level = "00";
 	}
 	var bitDepth = this.vpcC.bitDepth;
